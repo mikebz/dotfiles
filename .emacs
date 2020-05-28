@@ -58,3 +58,4 @@
 (setq elpy-rpc-python-command "python3")                                                                                                                           
 (add-hook 'elpy-mode-hook (lambda () (highlight-indentation-mode -1)))                                                                                             
                                                                             
+(load-theme 'monokai t)
