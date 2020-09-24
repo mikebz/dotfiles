@@ -25,6 +25,7 @@
 (defvar myPackages
   '(use-package
     elpy
+    yaml-mode 
     go-mode
     zenburn-theme
     material-theme
@@ -57,11 +58,14 @@
 
 ;; ====================================
 ;; Development Setup
-;; ====================================
-;; Enable elpy
-(elpy-enable)
 
+;; python
+(elpy-enable)
 (setq elpy-rpc-python-command "python3")
 (add-hook 'elpy-mode-hook (lambda () (highlight-indentation-mode -1)))
 
+;; yaml
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
+;; nice visials
 (load-theme 'monokai t)
