@@ -1,6 +1,7 @@
 ;; Basic support for editing with spaces instead of tabs
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
+(setq make-backup-files nil)
 
 ;; ===================================
 ;; MELPA Package Support
