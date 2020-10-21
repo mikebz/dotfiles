@@ -1,1 +1,1 @@
-export PROMPT='%1~ %# '
+export PROMPT='%F{33} %~ %% %f'
