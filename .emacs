@@ -72,4 +72,4 @@
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 
 ;; nice visials
-(load-theme 'monokai t)
+(load-theme 'material t)
