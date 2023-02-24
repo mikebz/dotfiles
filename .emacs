@@ -1,5 +1,7 @@
 ;;; .emacs --- Emacs initialization file -*- lexical-binding: t; -*-
 
+(setq gc-cons-threshold most-positive-fixnum)
+
 ;; Enable company-mode for all files
 (add-hook 'after-init-hook #'global-company-mode)
 ;; enable repeat command in shell
@@ -37,8 +39,6 @@
     yaml-mode
     markdown-mode
     go-mode
-    zenburn-theme
-    material-theme
     monokai-theme
     better-defaults)
   )
@@ -53,12 +53,15 @@
 
 ;; ====================================
 ;; Development Setup
+
 ;; python
 (elpy-enable)
 (setq elpy-rpc-python-command "python3")
 (add-hook 'elpy-mode-hook (lambda () (highlight-indentation-mode -1)))
+
 ;; yaml
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+
 ;; nice visials
 (load-theme 'monokai t)
 
